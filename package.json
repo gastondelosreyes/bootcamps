@@ -1,0 +1,19 @@
+{
+    "name": "1.http-server",
+    "version": "1.0.0",
+    "description": "Http learning",
+    "main": "server.js",
+    "scripts": {
+        "start": "NODE_ENV=production node server.js",
+        "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1"
+    }
+}
