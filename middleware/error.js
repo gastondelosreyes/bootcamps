@@ -1,6 +1,6 @@
 const ErrorResponse = require('../utils/errorResponse');
 
-const errHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res, next) => {
     let error = {...err }
     error.message = err.message;
 
@@ -31,4 +31,4 @@ const errHandler = (err, req, res, next) => {
     });
 }
 
-module.exports = errHandler;
+module.exports = errorHandler;
