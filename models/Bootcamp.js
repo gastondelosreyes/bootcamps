@@ -124,5 +124,6 @@ BootcampSchema.pre('save', async function(next) {
     //Do not save address field in DB
     this.address = undefined;
     next();
-})
+});
+
 module.exports = mongoose.model('Bootcamp', BootcampSchema);
